@@ -18,9 +18,12 @@
     background: var(--ks-background-body);
     padding: 1rem;
     overflow-y: auto;
-
-    @media screen and (max-width: 992px) {
-        align-items: flex-start;
+    
+    /* Ensure content is always centered */
+    & > * {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
     }
 }
 </style>
